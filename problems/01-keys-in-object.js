@@ -6,19 +6,29 @@ Do this once using using a `for...in` loop and once using `Object.keys`.
 
 Examples:
 
+*/
+
+function keysInObject(obj, array) {
+  let newArr = []
+  for (let keys in obj) {
+    newArr.push(keys)
+  }
+  return newArr
+}
+
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
 let foods = {apple: 'tart', lemon: 'sour', mango: 'sweet'}
-keysInObject(animals); // => ["dog", "cat", "bison"]
-keysInObject(foods); // => ["apple", "lemon", "mango"]
-***********************************************************************/
+console.log(keysInObject(animals)); // => ["dog", "cat", "bison"]
+console.log(keysInObject(foods)); // => ["apple", "lemon", "mango"]
+// ***********************************************************************/
 
-function keysInObject(obj) {
-
-  TESTING 1 
-
-
-
-}
+// function keysInObject(obj, array) {
+//   let newArr = []
+//   for (let keys in obj) {
+//     newArr.push(keys)
+//   }
+//   return newArr
+// }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keysInObject;
